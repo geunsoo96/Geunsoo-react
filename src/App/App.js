@@ -20,5 +20,5 @@ function App() {
     </div>
   );
 }
-
+// component
 export default App;
