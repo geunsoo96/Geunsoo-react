@@ -1,24 +1,31 @@
 import './App.css';
+import TestMarkup from './Components/testMarkup';
+import styled from 'styled-components';
 
 function App() {
-  const name = 'tom';
-  const naver = {
-    name: '네이버',
-    url: 'http://naver.com',
-  };
+  const Parant = styled.div`
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `;
+  const Root = styled.div`
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+  `;
   return (
-    <div className='App'>
-      <h1
-        style={{
-          color: 'red',
-          backgroundColor: 'blue',
-        }}
-      >
-        Hello, {name}
-      </h1>
-      <a href={naver.url}>{naver.name}</a>
-    </div>
+    <Parant>
+      <Root>
+        <TestMarkup></TestMarkup>
+      </Root>
+    </Parant>
   );
 }
-// component
 export default App;
