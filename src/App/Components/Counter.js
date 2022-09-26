@@ -30,11 +30,13 @@ class Counter extends Component {
 export default Counter;
 
 // import './App.css';
-// import Counter from './Components/Counter';
+// import Counter from './Components/Counter.js';
 
 // function App() {
-//   return;
-
-//   <Counter></Counter>;
+//   return (
+//     <>
+//       <Counter />;
+//     </>
+//   );
 // }
 // export default App;
